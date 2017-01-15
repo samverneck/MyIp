@@ -1,9 +1,9 @@
 import React from 'react';
 import ReacDOM from 'react-dom';
 
-import App from './Components/App';
+import MyIp from './Components/MyIp';
 
 ReacDOM.render(
-  <App />,
+  <MyIp />,
   document.getElementById('app')
 );

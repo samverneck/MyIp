@@ -2,9 +2,9 @@ import React from 'react';
 // Components
 import MyFooter from './MyFooter';
 //Services
-import MyIp from './../Services/MyIp';
+import ipService from './../Services/ipService';
 
-class App extends React.Component {
+class MyIp extends React.Component {
   constructor(){
       super();
 
@@ -14,7 +14,7 @@ class App extends React.Component {
   }
 
   handleClick() {
-    const ip = MyIp.myIp().then((response) => {
+    const ip = ipService.myIp().then((response) => {
       this.setState({
         message: "Seu Ip é " + response.data.ip
       })
@@ -32,4 +32,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default MyIp;
